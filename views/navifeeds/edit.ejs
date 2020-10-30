@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('../partials/head') %>
+  </head>
+  <body>
+    <%- include('../partials/nav') %>
+
+    <div class="navifeed navifeed-edit">
+      <h2>Edit</h2>
+      <form class="navifeed-form" action="/navifeeds/<%= navifeed._id %>?_method=put" method="post">
+        <div>
+          <label for="content">content</label>
+          <input type="text" id="content" name="content" value="<%= navifeed.content %>">
+        </div>
+        <!-- <div>
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" value="<%= navifeed.email %>">
+        </div>
+        <div>
+          <label for="phone">Phone</label>
+          <input type="text" id="phone" name="phone" value="<%= navifeed.phone %>">
+        </div>
+        <div> -->
+          <button type="submit">Submit</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

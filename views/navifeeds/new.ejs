@@ -4,23 +4,23 @@
     <%- include('../partials/head') %>
   </head>
   <body>
-    <%- include('../partials/nav') %>
+    <!-- <%- include('../partials/nav') %> -->
 
-    <div class="contact contact-new">
-      <h2>New</h2>
-      <form class="contact-form" action="/contacts" method="post">
+    <div class="navifeed navifeed-new">
+      <h2>please submit</h2>
+      <form class="navifeed-form" action="/navifeeds" method="post">
         <div>
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" value="">
+          <label for="content">content</label>
+          <input type="text" id="content" name="content" value="">
         </div>
-        <div>
+        <!-- <div>
           <label for="email">Email</label>
           <input type="text" id="email" name="email" value="">
         </div>
         <div>
           <label for="phone">Phone</label>
           <input type="text" id="phone" name="phone" value="">
-        </div>
+        </div> -->
         <div>
           <button type="submit">Submit</button>
         </div>

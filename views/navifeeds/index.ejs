@@ -6,12 +6,12 @@
   <body>
     <%- include('../partials/nav') %>
 
-    <div class="contact contact-index">
-      <h2>Index</h2>
+    <div class="navifeed navifeed-index">
+      <h2>please submit</h2>
       <ul>
-        <% contacts.forEach(function(contact) { %>
+        <% navifeeds.forEach(function(navifeed) { %>
           <li>
-            <%= contact.name %>
+            <a href="/navifeeds/<%= navifeed._id %>"><%= navifeed.content %></a>
           </li>
         <% }) %>
       </ul>
