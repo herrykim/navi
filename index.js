@@ -40,7 +40,7 @@ app.get('/', function(req, res){
   res.redirect('/navifeeds');
 });
 // Navifeeds - Index
-app.get('/navifeeds/', function(req, res){
+app.get('/navifeeds', function(req, res){
   Navifeed.find({}, function(err, navifeeds){
     if(err) return res.json(err);
     res.render('navifeeds/index', {navifeeds:navifeeds});
