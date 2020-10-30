@@ -87,7 +87,8 @@ app.delete('/navifeeds/:id', function(req, res){
 });
 
 // Port setting
-var port = 3000;
+// var port = 3000;
+var port = process.env.PORT || 3000;
 app.listen(port, function(){
   console.log('server on! http://localhost:'+port);
 });
